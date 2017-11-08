@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8.11.2017, 15:14:09
+    Author     : nskyp
+*/
+
+body, html {
+    height: 100%;
+}
+
+.hero-image{
+    background-image: url('../img/uvod.jpg');
+    height: 100%;
+    
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+}
