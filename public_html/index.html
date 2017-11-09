@@ -15,28 +15,26 @@ and open the template in the editor.
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    
+
     <script type="text/javascript" src="js/myScript.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script type="text/javascript" >
-        
 
-    </script>
 
     <script type="text/javascript" src="js/easing.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
 </head>
 
 <body>
+    <div id="home"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">Personal Blog</a>
+                <a class="navbar-brand" href="#">KeiShadow blog</a>
             </nav>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link scroll" href="#home">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -47,8 +45,8 @@ and open the template in the editor.
                         <a class="nav-link scroll" href="#me">O mně</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link scroll" href="#contact">Kontakty</a>
-                        </li>
+                        <a class="nav-link scroll" href="#contact">Kontakty</a>
+                    </li>
                 </ul>
 
             </div>
@@ -80,7 +78,7 @@ and open the template in the editor.
             <!--works-->
             <!--images-hover-effects-->
             <script src="js/jquery.hoverGrid.js"></script>
-           
+
             <!--images-hover-effects-->
             <div class="works">
                 <div id="whatever" class="hover-grid">
@@ -94,7 +92,7 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-4 work-grid">
                         <div class="item hover-grid-item">
                             <img src="images/reference/anubis.jpg" title="name">
@@ -105,15 +103,16 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-4 work-grid">
-                            <div class="item hover-grid-item">
-                                <img src="images/reference/arMarker.png" title="name">
-                                <div class="caption" style="display: none;">
-                                    <h2>Ar Aplikace</h2>
-                                    <p>Aplikace, která dokáže rozeznávat Aruco Markery.</p>
-                                </div>
+                        <div class="item hover-grid-item">
+                            <img src="images/reference/arMarker.png" title="name">
+                            <div class="caption" style="display: none;">
+                                <h2>Ar Aplikace</h2>
+                                <p>Aplikace, která dokáže rozeznávat Aruco Markery.</p>
                             </div>
                         </div>
+                    </div>
 
                     <div class="clearfix"> </div>
                 </div>
@@ -126,33 +125,58 @@ and open the template in the editor.
         <div class="container">
             <div class="head-one text-center me-head">
                 <h2>O mně</h2>
-                <span> </span>
-                
-            </div>	
+            </div>
             <!--About me-->
             <div class="me-members">
-                <div class="col-md-4">
-                    <div class="me-member  text-center">
-                        <img class="t-pic" src="images/petrnoga.jpg" width="200px" title="Petr Noga">
-                        <h3>Petr Noga</h3>
-                        <span>Student</span>
-                        <ul class="social-network social-circle unstyled-list list-inline">
-                            <li><a href="mailto:n.skypo@gmail.com" target="_blank" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
-                                
-                            <li><a href="https://www.linkedin.com/in/petr-noga-5a6aa6124/" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/k3ishadow/" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                            <div class="clearfix"> </div>
-                        </ul>
+                <div class="row">
+                    <div class="col-sm-4 m-auto ">
+                        <div class="me-member me-height  text-center">
+                            <img class="t-pic" src="images/petrnoga.jpg" width="200px" title="Petr Noga">
+                            <h3>Petr Noga</h3>
+                            <span>Student</span>
+                            <ul class="social-network social-circle unstyled-list list-inline">
+                                <li>
+                                    <a href="mailto:n.skypo@gmail.com" target="_blank" class="icoGmail" title="Gmail">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.linkedin.com/in/petr-noga-5a6aa6124/" target="_blank" class="icoLinkedin"
+                                        title="Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/k3ishadow/" target="_blank" class="icoInstagram" title="Instagram">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+
                     </div>
-                  
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p>Jsem studentem Vysoké školy Báňské, studuji Informační techonologie.</p>
+
+                    <div class="col-sm-4 m-auto">
+                        <div class="card me-height">
+                            <div class="card-body">
+                                <p>Jsem studentem Vysoké školy Báňské, studuji Informační techonologie.
+                                    <br> Mé koníčky:
+                                    <ul class="list list-unstyled">
+                                        <li class="list-item">Programování android aplikací</li>
+                                        <li class="list-item">Programování webových stránek</li>
+                                        <li class="list-item">Sledování seriálů</li>
+                                        <li class="list-item">Fotografování</li>
+                                    </ul>
+                                    Velký zájem mám o rozšiřenou realitu, proto jsem si vybral bakalářskou práci na téma Rozšiřená realita na platformě Android.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="clearfix"> </div>
             </div>
             <!--//team-members-->
@@ -160,56 +184,41 @@ and open the template in the editor.
     </div>
 
     <div id="contact" class="contact">
-            <div class="container">
-                <div class="head-one text-center">
-                    <h2>contact</h2>
-                    <span> </span>
-                </div>
-                <div class="contact-grids">                
-                    <div class="col-md-7 contact-form">
-                    <p>Want to contact us now? Just drop us a line below.</p>	
+        <div class="container">
+            <div class="head-one text-center">
+                <h2>Kontakty</h2>
+                <span> </span>
+            </div>
+            <div class="contact-grids">
+                <div class="col-md-7 contact-form">
+                    <p>Pomocí formuláře dole, mě můžete kontaktovat</p>
                     <form>
-                        <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-                        <input type="text" class="textbox" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">								    
-                        <input type="submit" value="Send">
+                        <textarea value="Zpráva:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zpráva';}">Zpráva</textarea>
+                        <input type="text" class="textbox" value="Jméno:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Jméno';}">
+                        <input type="submit" value="Odeslat">
                     </form>
-                    </div>
-                    <div class="col-md-5 contact-map">
-                            <p>Where are we located?</p>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492831.879838215!2d-102.04805634196835!3d37.38207314531542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1403540089700"></iframe>
-                            </div>
-                    <div class="clearfix"> </div>
                 </div>
+                <div class="col-md-5 contact-map">
+                    <p>Kde se nacházím?</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492831.879838215!2d-102.04805634196835!3d37.38207314531542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1403540089700"></iframe>
+                </div>
+                <div class="clearfix"> </div>
             </div>
         </div>
+    </div>
 
-        <div class="footer">
-                <div class="container">
-                    <div class="footer-left">
-                        <p><span>Adress:</span> Ostrava</p>
-                    </div>
-                    <div class="footer-right">
-                        <p>Petr Noga </p>
-                        <script type="text/javascript">
-                            $(document).ready(function() {
-                                /*
-                                var defaults = {
-                                      containerID: 'toTop', // fading element id
-                                    containerHoverID: 'toTopHover', // fading element hover id
-                                    scrollSpeed: 1200,
-                                    easingType: 'linear' 
-                                 };
-                                */
-                                
-                                $().UItoTop({ easingType: 'easeOutQuart' });
-                                
-                            });
-                        </script>
-                            <a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>
+                    <span>Adress:</span> Ostrava</p>
             </div>
+            <div class="footer-right">
+                <p>Petr Noga </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
 </body>
 
 </html>
