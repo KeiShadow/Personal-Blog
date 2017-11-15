@@ -383,6 +383,18 @@ a {
 	filter: alpha(opacity=0);
 }
 /*----respoisnive-design----*/
+@media (max-width:1600px){
+	.container{
+		width:80%;
+	}
+	.banner {
+		min-height: 560px;
+		padding-left: 390px;
+	}	
+	.banner-info {
+		padding-top: 20.5em;
+	}
+}
 @media (max-width:1366px){
 	.container{
 		width:75%;
@@ -396,9 +408,7 @@ a {
 		min-height: 560px;
 		padding-left: 250px;
 	}
-	.banner-info {
-		margin-top: 12.5em;
-	}
+	
 }
 @media (max-width:1024px){
 	.container{
@@ -408,9 +418,7 @@ a {
 		min-height: 560px;
 		padding-left: 130px;
 	}
-	.banner-info {
-		padding-top: 12.5em;
-	}
+	
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
 	}
@@ -421,11 +429,9 @@ a {
 	}
 	.banner {
 		min-height: 480px;
-		padding-left: 90px;
+		padding-left: 10px;
 	}
-	.banner-info {
-		padding-top: 11.5em;
-	}
+	
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
 	}
@@ -462,9 +468,7 @@ a {
 		min-height: 450px;
 		padding-left: 50px;
 	}
-	.banner-info {
-		padding-top: 6.5em;
-	}
+	
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
 	}
@@ -507,9 +511,7 @@ a {
 		min-height: 380px;
 		padding-left: 20px;
 	}
-	.banner-info {
-		padding-top: 5.5em;
-	}
+	
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
 	}
@@ -561,9 +563,7 @@ a {
 		min-height:280px;
 		padding-left: 10px;
 	}
-	.banner-info {
-		padding-top: 2.5em;
-	}
+	
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
 	}
