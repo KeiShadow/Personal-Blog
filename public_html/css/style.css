@@ -12,13 +12,20 @@ body, html {
     height: 100%;
 }
 
-.banner {
-    background: url(../images/uvod.jpg) no-repeat 0px 0px;
-    min-height: 100%;
-    background-size: 100% 100%;
+.carousel-control-prev, .carousel-control-next,.carousel-control-prev-icon,.carousel-control-next-icon{
+	z-index: 99;
 }
-
-.banner-info {
+.full-screen {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+.banner{
+	z-index: 1;
+	position: absolute;
+	padding-left:390px;
+}
+  .banner-info {
     padding-top: 25.5em;
 }
 .banner-info h1 {
@@ -33,13 +40,19 @@ body, html {
     display: block;
 }
 .banner-info p {
-    color: rgb(211, 235, 211);
+    color: rgb(124, 190, 94);
     font-family: 'Playball', cursive;
-    font-size: 1.3em;
+	font-size: 1.3em;
+	background-color: rgba(0, 0, 0, 0.692)
 }
+
+
 .big-btn {
     margin-top: 2.5em;
     display: inline-block;
+}
+.big-btn:hover{
+	transform: rotate3d(10, 1, 0, 30deg);
 }
 a.big-btn span {
     width: 80px;
@@ -48,7 +61,7 @@ a.big-btn span {
     background: url(../images/big-btn.png) no-repeat 0px 0px;
 }
 .container {
-    width: 80%;
+    width: 100%;
 }
 
 label {
@@ -381,6 +394,7 @@ a {
 	}
 	.banner {
 		min-height: 560px;
+		padding-left: 250px;
 	}
 	.banner-info {
 		margin-top: 12.5em;
@@ -392,9 +406,10 @@ a {
 	}
 	.banner {
 		min-height: 560px;
+		padding-left: 130px;
 	}
 	.banner-info {
-		margin-top: 12.5em;
+		padding-top: 12.5em;
 	}
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
@@ -406,9 +421,10 @@ a {
 	}
 	.banner {
 		min-height: 480px;
+		padding-left: 90px;
 	}
 	.banner-info {
-		margin-top: 9.5em;
+		padding-top: 11.5em;
 	}
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
@@ -444,9 +460,10 @@ a {
 	}
 	.banner {
 		min-height: 450px;
+		padding-left: 50px;
 	}
 	.banner-info {
-		margin-top: 6.5em;
+		padding-top: 6.5em;
 	}
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
@@ -488,9 +505,10 @@ a {
 	}
 	.banner {
 		min-height: 380px;
+		padding-left: 20px;
 	}
 	.banner-info {
-		margin-top: 4.5em;
+		padding-top: 5.5em;
 	}
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
@@ -541,9 +559,10 @@ a {
 	}
 	.banner {
 		min-height:280px;
+		padding-left: 10px;
 	}
 	.banner-info {
-		margin-top: 2.5em;
+		padding-top: 2.5em;
 	}
 	.contact-map p, .contact-form p {
 		font-size: 1.1em;
