@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+    $(function() {
+        $('.nav a').on('click', function(){ 
+            if($('.navbar-toggler').css('display') !='none'){
+                $(".navbar-toggler").trigger( "click" );
+            }
+        });
+    });
+
     $('#whatever').hoverGrid();
 
     var $item = $('.carousel .carousel-item'); 
@@ -24,6 +33,8 @@ $(document).ready(function () {
       interval: 6000,
       pause: "false"
     });
+
+
 });
 
 jQuery(document).ready(function($) {
