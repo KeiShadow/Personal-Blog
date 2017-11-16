@@ -21,9 +21,10 @@ body, html {
 	background-repeat: no-repeat;
   }
 .banner{
+	width:100%;
 	z-index: 1;
 	position: absolute;
-	padding-left:390px;
+	margin: 0 auto;
 }
   .banner-info {
     padding-top: 25.5em;
@@ -389,7 +390,8 @@ a {
 	}
 	.banner {
 		min-height: 560px;
-		padding-left: 390px;
+		
+		margin: 0 auto;
 	}	
 	.banner-info {
 		padding-top: 20.5em;
@@ -406,7 +408,7 @@ a {
 	}
 	.banner {
 		min-height: 560px;
-		padding-left: 250px;
+		padding: 0;
 	}
 	
 }
@@ -416,7 +418,8 @@ a {
 	}
 	.banner {
 		min-height: 560px;
-		padding-left: 130px;
+		
+		padding: 0;
 	}
 	
 	.contact-map p, .contact-form p {
@@ -429,7 +432,8 @@ a {
 	}
 	.banner {
 		min-height: 480px;
-		padding-left: 10px;
+		
+		padding: 0;
 	}
 	
 	.contact-map p, .contact-form p {
@@ -466,7 +470,8 @@ a {
 	}
 	.banner {
 		min-height: 450px;
-		padding-left: 50px;
+	
+		padding: 0;
 	}
 	
 	.contact-map p, .contact-form p {
@@ -509,7 +514,8 @@ a {
 	}
 	.banner {
 		min-height: 380px;
-		padding-left: 20px;
+		width: 100%;
+		padding:0;
 	}
 	
 	.contact-map p, .contact-form p {
@@ -561,7 +567,8 @@ a {
 	}
 	.banner {
 		min-height:280px;
-		padding-left: 10px;
+		width: 100%;
+		margin: 0 auto;
 	}
 	
 	.contact-map p, .contact-form p {
