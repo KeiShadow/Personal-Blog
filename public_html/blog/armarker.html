@@ -1,0 +1,156 @@
+<html lang="cs">
+
+<head>
+    <title>Aruco Detekce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Aplikace pro mobilní telefon na platformě Android. Tato aplikace dokáže detekovat aruco marker.">
+    <meta name="keywords" content="Opencv,Android,Aruco,Weather,Blog,Photograph,Website,Webové stránky, ArucoMarkery">
+    <meta name="author" content="Petr Noga">
+
+
+
+    <link href="../css/blog.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/jquery.hoverGrid.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../js/myScript.js"></script>
+
+    <script src="../js/jquery.hoverGrid.js"></script>
+    <script type="text/javascript" src="../js/easing.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="logo" height="38px">
+                </a>
+            </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="../index.html#home">Domů</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Články
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Detekce markerů
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                                <a class="dropdown-item" href="#">Počasí web</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#contact">Kontakty</a>
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="welcomeImage">
+        <div class="banner text-center">
+
+            <div class="banner-info">
+                <h1 class="text-danger"> Aruco Detekce</h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+
+        <div class="card ods">
+            <div class="post ">
+                <div class="card-header">
+                    <h1>
+                        Detekce markerů
+                    </h1>
+                </div>
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p class="lead text-dark">
+                                Jedná se o aplikaci, která pomocí mobilní kamery detekuje aruco marker a na něj bude zobrazovat 3D objekty, tyto objekty
+                                si uživatel bude moct natočit. Budu kombinovat Javu s C++, použitím OpenCV knihoven, a také
+                                OpenGL. Pro správnou funkci kamery a detekce bude uživatel muset kalibrovat kameru, kalibrace
+                                uloží matici do souboru na interní uložiště. Videa která natočí uživatel se budou také ukládat
+                                na SD kartu nebo na interní uložiště.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 text-lg-right">
+                            <img src="../images/aruco/marker.jpg" width="300" alt="marker">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card-footer text-center">
+                    <h6>Projekt je pořád ve vývoji.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="head-one text-center">
+                <h2>Kontakty</h2>
+                <span> </span>
+            </div>
+            <div class="contact-grids">
+
+                <div class="col-md-5 contact-map">
+                    <p>Kde se nacházím?</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492831.879838215!2d-102.04805634196835!3d37.38207314531542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1403540089700"></iframe>
+                </div>
+
+                <div class="col-md-7 contact-form">
+                    <p>Pomocí formuláře dole, mě můžete kontaktovat</p>
+                    <form>
+                        <textarea value="Zpráva:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zpráva';}">Zpráva</textarea>
+                        <input type="text" class="textbox" value="Jméno:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Jméno';}">
+                        <input type="submit" value="Odeslat">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>Petr Noga </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</body>
+
+</html>

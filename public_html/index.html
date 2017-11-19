@@ -45,7 +45,9 @@ and open the template in the editor.
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" height="38px"></a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo" height="38px">
+                </a>
             </nav>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +71,7 @@ and open the template in the editor.
                             Články
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Detekce markerů</a>
+                            <a class="dropdown-item" href="blog/armarker.html">Detekce markerů</a>
                             <a class="dropdown-item" href="#">Počasí web</a>
                         </div>
                     </li>
@@ -84,19 +86,19 @@ and open the template in the editor.
 
 
     <div class="banner text-center">
-            
-                <div class="banner-info">
-                    <h1>
-                        <span>Vítejte na mém</span> Osobním blogu</h1>
-                    <p>Vyvíjím webové aplikace, webové stránky, aplikace pro mobilní telefony Android. </p>
-                    <label class="page-scroll">
-                        <a class="big-btn" href="#work1">
-                            <span> </span>
-                        </a>
-                    </label>
-                </div>
-          
+
+        <div class="banner-info">
+            <h1>
+                <span>Vítejte na mém</span> Osobním blogu</h1>
+            <p>Vyvíjím webové aplikace, webové stránky, aplikace pro mobilní telefony Android. </p>
+            <label class="page-scroll">
+                <a class="big-btn" href="#work1">
+                    <span> </span>
+                </a>
+            </label>
         </div>
+
+    </div>
 
 
 
@@ -109,10 +111,10 @@ and open the template in the editor.
                 <img class="d-block w-100" src="images/Uvod/android.png" alt="Android">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/Uvod/code.jpg" alt="Code">        
+                <img class="d-block w-100" src="images/Uvod/code.jpg" alt="Code">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/Uvod/augmentedr.png" alt="Augmented Reality">               
+                <img class="d-block w-100" src="images/Uvod/augmentedr.png" alt="Augmented Reality">
             </div>
         </div>
 
@@ -124,14 +126,7 @@ and open the template in the editor.
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-
-       
-
-
     </div>
-
-
-
 
     <!--works-->
     <div id="work" class="work">
@@ -172,12 +167,13 @@ and open the template in the editor.
                             <div class="caption" style="display: none;">
                                 <h2>Ar Aplikace</h2>
                                 <p>Aplikace, která dokáže rozeznávat Aruco Markery.</p>
+                                <a class="alert-link" target="_blank" href="blog/armarker.html">Článek</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 work-grid">
                         <div class="item hover-grid-item">
-                            <img src="images/reference/cloudSnow.svg" height="250px" title="name">
+                            <img src="images/reference/cloudSnow.svg" height="250" title="name">
                             <div class="caption" style="display: none;">
                                 <h2>Počasí</h2>
                                 <p>Webová stránka, na kontrolu počasí.</p>
@@ -202,7 +198,7 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-sm-4 m-auto ">
                         <div class="me-member me-height  text-center">
-                            <img class="t-pic" src="images/petrnoga.jpg" width="200px" title="Petr Noga">
+                            <img class="t-pic" src="images/petrnoga.jpg" width="200" title="Petr Noga">
                             <h3>Petr Noga</h3>
                             <span>Student</span>
                             <ul class="social-network social-circle unstyled-list list-inline">
@@ -269,8 +265,8 @@ and open the template in the editor.
                 <div class="col-md-7 contact-form">
                     <p>Pomocí formuláře dole, mě můžete kontaktovat</p>
                     <form>
-                        <textarea value="Zpráva:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zpráva';}">Zpráva</textarea>
-                        <input type="text" class="textbox" value="Jméno:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Jméno';}">
+                        <textarea value="Zpráva:" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Zpráva';}">Zpráva</textarea>
+                        <input type="text" class="textbox" value="Jméno:" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Jméno';}">
                         <input type="submit" value="Odeslat">
                     </form>
                 </div>
