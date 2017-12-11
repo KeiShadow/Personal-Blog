@@ -1,11 +1,11 @@
 <html lang="cs">
 
 <head>
-    <title>Aruco Detekce</title>
+    <title>Vyhledávání letenk</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Aplikace pro mobilní telefon na platformě Android. Tato aplikace dokáže detekovat aruco marker.">
-    <meta name="keywords" content="Opencv,Android,Aruco,Weather,Blog,Photograph,Website,Webové stránky, ArucoMarkery">
+    <meta name="description" content="Webová stránka pro vyhledávání letenek.">
+    <meta name="keywords" content="kiwi, citron, letenky, letadla, vyhledej, mapa, města">
     <meta name="author" content="Petr Noga">
 
 
@@ -46,18 +46,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav navbar-nav ml-auto ">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link " href="../index.html#home">Domů</a>
-                         </li>
-                         <li class="nav-item active"> <a class="nav-link " href="armarker.html">Detekce Markeru</a> <span class="sr-only">(current)</span> </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Blog
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Detekce markerů
+                                    <a class="dropdown-item" href="armarker.html">Detekce markerů
+
                                     </a>
-                                    <a class="dropdown-item" href="citron.html">Vyhledávání letů </a>
+                                    <a class="dropdown-item" href="#">Vyhledávání letů
+                                        <span class="sr-only">(current)</span>
+                                    </a>
                                     <a class="dropdown-item" href="../weathersite/index.html">Počasí web</a>
                                 </div>
                             </li>
@@ -72,11 +73,11 @@
     </header>
 
 
-    <div class="welcomeImage">
+    <div class="welocmeImageCitron">
         <div class="banner text-center">
 
             <div class="banner-info">
-                <h1 class="text-danger"> Aruco Detekce</h1>
+                <h1 class="text-danger"> Citron vyhledávání letů</h1>
             </div>
 
         </div>
@@ -84,38 +85,50 @@
     <section class="postSection">
 
         <div class="container">
-                <div class="card">
-                        <div class="post ">
-                            <div class="card-header">
-                                <h1>
-                                    Detekce markerů
-                                </h1>
+            <div class="card">
+                <div class="post ">
+                    <div class="card-header">
+                        <h1>
+                            Citron
+                        </h1>
+                    </div>
+                    <div class="card-body ">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <p class="lead text-dark">
+                                    Jedná se o projekt do předmětu VIA("Vývoj internetových aplikací"). Uživatel si pomocí mapy navolí odkud, kam a kdy chce
+                                    letěte nebo doplní kdy se chce vrátit. Při stisknu na tlačítko vyhledej, stránka vrátí
+                                    všechny letenky s touto volbou. Nechal jsem se dost inspirovat ze stránky KIWI.com
+                                    <br> Použité API:
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="http://https://skypickerpublicapi.docs.apiary.io" target="blank">Skypicker Api</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="http://https://developers.google.com/maps/" target="blank">Google Maps Api</a>
+                                        </li>
+
+                                    </ul>
+
+
+                                </p>
                             </div>
-                            <div class="card-body ">
-                                <div class="row">
-                                    <div class="col-sm-7">
-                                        <p class="lead text-dark">
-                                            Jedná se o aplikaci, která pomocí mobilní kamery detekuje aruco marker a na něj bude zobrazovat 3D objekty, tyto objekty
-                                            si uživatel bude moct natočit. Budu kombinovat Javu s C++, použitím OpenCV knihoven, a také
-                                            OpenGL. Pro správnou funkci kamery a detekce bude uživatel muset kalibrovat kameru, kalibrace
-                                            uloží matici do souboru na interní uložiště. Videa která natočí uživatel se budou také ukládat
-                                            na SD kartu nebo na interní uložiště.
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-5 text-lg-right">
-                                        <img src="../images/aruco/marker.jpg" width="300" alt="marker">
-                                    </div>
-                                </div>
-            
-            
-                            </div>
-                            <div class="card-footer text-center">
-                                <h6>Projekt je stále ve vývoji.</h6>
+                            <div class="col-sm-5 text-lg-right">
+                                <img src="../images/reference/citron.png" width="300" alt="marker">
                             </div>
                         </div>
+
+
                     </div>
+                    <div class="card-footer text-center">
+                        <h6>
+                            <a href="../citron/index.html" target="blank">Webová stránka</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
     </section>
 
 

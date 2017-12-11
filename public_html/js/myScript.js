@@ -1,13 +1,12 @@
 $(document).ready(function () {
 
-    $(function() {
-        $('.nav a').on('click', function(){ 
-            if($('.navbar-toggler').css('display') !='none'){
-                $(".navbar-toggler").trigger( "click" );
-            }
-        });
-    });
-
+$(document).click(function (event) {
+    var clickover = $(event.target);
+    var _opened = $(".navbar-collapse").hasClass("show");
+    if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+        $(".navbar-toggler").click();
+    }
+});
     $('#whatever').hoverGrid();
 
     var $item = $('.carousel .carousel-item'); 
@@ -39,10 +38,26 @@ $(document).ready(function () {
 
 jQuery(document).ready(function($) {
 
-   
-    $(".scroll").click(function(event){		
+
+    jQuery('.post').addClass("hidden").viewportChecker({
+        classToAdd: 'visible my-animation animated fadeIn',
+        offset: 100
+       });
+       jQuery('.post2').addClass("hidden").viewportChecker({
+        classToAdd: 'visible my-animation animated fadeInLeft',
+        offset: 100
+       });
+
+       jQuery('.post3').addClass("hidden").viewportChecker({
+        classToAdd: 'visible my-animation animated fadeInRight',
+        offset: 100
+       });
+    
+       $(".scroll").click(function(event){		
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top -60},1000);
+        $(this.hash).addClass("active");
+        
     });
     $(".big-btn").click(function(event){
         event.preventDefault();

@@ -3,7 +3,7 @@ body, html {
 }
 
 .ods{
-    margin: 10px;
+	margin: 6em 0em 5em 0em;
 }
 .banner{
     width:100%;
@@ -13,7 +13,7 @@ body, html {
 	margin: 0 auto;
 }
   .banner-info {
-    padding-top: 15.5em;
+    padding-top: 10.5em;
 }
 .banner-info h1 {
     font-size: 2.5em;
@@ -24,14 +24,32 @@ body, html {
     margin: 0em;
 }
 
+.postSection{
+	background: rgba(70, 70, 70, 0.123);
+    padding: 3em 0 4em;
+    border: 1px solid #DBDBDB;
+    border-right: 0;
+    border-left: 0;
+}
 
-
+.welocmeImageCitron{
+	/* The image used */
+    background-image: url("../images/blog/citron.png");
+	
+		/* Set a specific height */
+		height: 40%;
+		/* Position and center the image to scale nicely on all screens */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+}
 .welcomeImage{
 /* The image used */
     background-image: url("../images/uvod/augmentedr.png");
 
     /* Set a specific height */
-    height: 50%;
+    height: 40%;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -133,8 +151,35 @@ a {
  background-color: #D3D3D3;   
 }
 /*----contact----*/
+.head-one{
+	padding:5em 0 2em;
+}
+.head-one h2{
+	color:#303030;
+	font-weight:800;
+	font-size:1.8em;
+	text-transform:uppercase;
+	margin:0.2em 0;
+}
+.head-one span{
+	height:3px;
+	background:#303030;
+	display:inline-block;
+	width:20%;
+	margin:0;
+	padding:0;
+}
+.head-one p{
+	margin: 0.4em auto;
+	font-size: 1em;
+	color: #5A5A5A;
+	letter-spacing: 0.015em;
+	width: 61%;
+	line-height: 1.5em;
+}
 .contact{
-	padding: 3em 0 6em;
+ padding: 0em 0em 5em 0em;
+
 }
 .contact-map{
 	
@@ -272,7 +317,7 @@ a {
 		margin: 0 auto;
 	}	
 	.banner-info {
-		padding-top: 20.5em;
+	padding-top: 11.05em;
 	}
 }
 @media (max-width:1366px){

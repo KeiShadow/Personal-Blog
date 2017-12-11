@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="cs">
+
+<head>
+    <title>Počasí web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/script.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/climacon.css">
+    <link rel="stylesheet" href="font/climacon-font/styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png" alt="logo" height="38px">
+                    </a>
+                </nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html#home">Domů</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Počasí</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="../blog/armarker.html">Detekce markerů
+
+                                    </a>
+                                    <a class="dropdown-item" href="../blog/citron.html">Vyhledávání letů
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                    <a class="dropdown-item" href="index.html">Počasí web</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contact">Kontakty</a>
+                            </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="weatherSec">
+        <div class="container">
+            <div class="top-ods">
+
+                <input placeholder="Type place for weather" name="srchCity" autocomplete="true" class="form-control" id="srchCity" list="listOfCities">
+                <datalist id="listOfCities">
+
+                </datalist>
+                <input class="btn float-right" type="button" id="getWeather" onclick="getWeatherToday()" value="submit">
+
+
+                <div class="page-item">
+                    <h1 class="display-4">Weather in
+                        <span id="city"> </span>
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-8 ">
+
+                    <div class="card min-height">
+                        <div class="card-body d-flex  flex-wrap">
+
+                            <div class="ods">
+                                <span id="temp" class="temperature"></span>
+                            </div>
+
+                            <span id="svg" class="svg size"></span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="weather-desc">
+                                <span id="desc" class="desc"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-sm-4">
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-unstyled weather-params text-center justify-content-center">
+                                <li class="list-group-item">
+                                    <i class="climacon thermometer medium-high"></i>
+                                    <span id="max-temp" class="weather-max-temperature"></span>
+                                </li>
+                                <li class="list-group-item ">
+                                    <i class="climacon moon full"></i>
+                                    <span id="humid" class="weather-humidity"></span>
+                                </li>
+                                <li class="list-group-item  ">
+                                    <i class="climacon wind"></i>
+                                    <span id="wind-speed" class="weather-wind-speed"></span>
+                                </li>
+                                <li class="list-group-item ">
+                                    <i class="climacon sunrise"></i>
+                                    <span id="sunrise" class="weather-sunrise"></span>
+                                </li>
+                                <li class="list-group-item ">
+                                    <i class="climacon sunset"></i>
+                                    <span id="sunset" class="weather-sunset"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="boxMap">
+        <div id='map'></div>
+    </div>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="head-one text-center">
+                <h2>Kontakty</h2>
+                <span> </span>
+            </div>
+            <div class="contact-grids">
+
+                <div class="col-md-5 contact-map">
+                    <p>Kde se nacházím?</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492831.879838215!2d-102.04805634196835!3d37.38207314531542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1403540089700"></iframe>
+                </div>
+
+                <div class="col-md-7 contact-form">
+                    <p>Pomocí formuláře dole, mě můžete kontaktovat</p>
+                    <form>
+                        <textarea value="Zpráva:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zpráva';}">Zpráva</textarea>
+                        <input type="text" class="textbox" value="Jméno:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Jméno';}">
+                        <input type="submit" value="Odeslat">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>Petr Noga </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmPK2B-9hLjyCmXlHb4DOOeCAPNUp9GPk&callback=initMap&language=cs">
+    </script>
+</body>
+
+</body>
+
+</html>
